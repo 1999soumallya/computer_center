@@ -1,0 +1,1053 @@
+/* 
+================================================
+Poppins Fonts CDN
+================================================
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&family=Raleway:wght@400;500;600;700;800&display=swap');
+
+/* 
+================================================
+Poppins Fonts CDN
+================================================
+*/
+
+
+
+/* 
+================================================
+Colors Variables
+================================================
+*/
+:root {
+    --themeColor:#f97618;
+    --primary: #010082;
+    --secondary: #01133c;
+    --white: #ffffff;
+    --dark: #000000;
+}
+
+/* 
+================================================
+Colors Variables
+================================================
+*/
+
+
+
+
+
+
+/* 
+================================================
+Deafult CSS
+================================================
+*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0;
+    line-height: 1;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0;
+    line-height: 30px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+li {
+    display: inline;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+/* 
+================================================
+Deafult CSS
+================================================
+*/
+
+
+
+/* 
+================================================
+Scrolltop CSS
+================================================
+*/
+.scrollTop {
+    position: fixed;
+    bottom: 800px;
+    right: 40px;
+    background: var(--themeColor);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s ease;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.scrollTop i {
+    font-size: 25px;
+    color: var(--white);
+}
+
+.scrollTop.active {
+    bottom: 40px;
+    visibility: visible;
+    opacity: 1;
+}
+/* 
+================================================
+Scrolltop CSS
+================================================
+*/
+
+
+
+
+
+
+
+
+/* 
+================================================
+Topbar CSS
+================================================
+*/
+.topbar {
+    background: var(--primary);
+    color: var(--white);
+    padding: 15px 0;
+}
+
+.topbar_left ul {
+    display: flex;
+    column-gap: 50px;
+    align-items: center;
+    flex-flow: wrap;
+}
+
+.topbar_left ul li a {
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.topbar_social {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 25px;
+    flex-wrap: wrap;
+}
+
+.topbar_social a {
+    color: var(--white);
+    font-size: 15px;
+}
+
+/* 
+================================================
+Topbar CSS
+================================================
+*/
+
+
+/* 
+================================================
+Header CSS
+================================================
+*/
+
+.header .nav-link {
+    font-size: 17px;
+    color: var(--secondary) !important;
+    text-transform: capitalize;
+    font-weight: 400;
+    transition: .3s ease;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -ms-transition: .3s ease;
+    -o-transition: .3s ease;
+}
+
+.header .nav-link:hover {
+    color: var(--themeColor) !important;
+}
+
+.header .nav-link.active {
+    color: var(--themeColor) !important;
+}
+
+a.navbar-brand img {
+    width: 120px;
+}
+a.navbar-brand img:nth-child(1) {
+    width: 130px;
+}
+a.navbar-brand {
+    padding: 0;
+}
+
+/* 
+================================================
+Header CSS
+================================================
+*/
+
+
+
+/* 
+================================================
+Banner CSS
+================================================
+*/
+.banner {}
+
+.slider_img {
+    position: relative;
+}
+
+.slider_img::after {
+    content: '';
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slider_img {
+    height: 100vh;
+}
+
+.slider_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.slider_items {
+    position: relative;
+}
+
+.slider_overley {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.slider_content h1 {
+    color: var(--white);
+    font-size: 65px;
+    font-weight: 700;
+    text-transform: capitalize;
+    line-height: 80px;
+    margin-bottom: 30px;
+}
+
+.slider_content p {
+    color: rgba(255, 255, 255, .5);
+    margin-bottom: 30px;
+}
+
+.custom_btn {
+    background: var(--primary);
+    color: var(--white);
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 500;
+    display: inline-flex;
+    padding: 15px 35px;
+    line-height: 1;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.banner .owl-nav button {
+    background: var(--white) !important;
+    width: 50px !important;
+    height: 50px !important;
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    font-size: 25px !important;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    opacity: 0;
+}
+
+.banner:hover .owl-nav button {
+    opacity: 1;
+}
+
+.banner .owl-nav button.owl-next {
+    left: auto;
+    right: 40px;
+}
+
+.banner .owl-nav button:hover {
+    background: var(--themeColor) !important;
+    color: var(--white) !important;
+}
+
+.banner .owl-dots .owl-dot {}
+
+/* 
+================================================
+Banner CSS
+================================================
+*/
+
+
+
+/* 
+================================================
+Our Category CSS
+================================================
+*/
+.our_category {
+    top: -100px;
+    position: relative;
+    z-index: 9;
+}
+
+.our_category .card {
+    text-align: center;
+    padding: 20px;
+    color: #ffff;
+}
+
+.our_category .row .col-sm-3:nth-child(1) .card {
+    background: #10c45c;
+}
+
+.our_category .row .col-sm-3:nth-child(2) .card {
+    background: #1ec1d9;
+}
+
+.our_category .row .col-sm-3:nth-child(3) .card {
+    background: #307ad5;
+}
+
+.our_category .row .col-sm-3:nth-child(4) .card {
+    background: #eab830;
+}
+
+.category_icon {
+    width: 90px;
+    margin: auto;
+    position: absolute;
+    top: -41px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ffff;
+    padding: 20px;
+    border-radius: 50%;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.category_icon img {
+    width: 100%;
+}
+
+.category_content h4 {
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 20px;
+    padding-top: 30px;
+    min-height: 90px;
+    margin-top: 20px;
+}
+
+.category_content p {
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.apply_btn {
+    border: 1px solid #ccc;
+    padding: 14px 30px;
+    line-height: 1;
+    display: inline-block;
+    border-radius: 30px;
+    margin-top: 30px;
+    font-size: 14px;
+    color: var(--seconday);
+    font-weight: 500;
+    transition: .3s;
+}
+
+.apply_btn:hover {
+    background: var(--primary);
+    color: var(--white);
+    border-color: transparent;
+}
+
+.heading {
+    position: relative;
+}
+
+.heading h2 {
+    font-size: 45px;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: var(--seconday);
+
+}
+
+.heading h2 span {
+    color: var(--themeColor);
+}
+
+/* 
+================================================
+Our Category CSS
+================================================
+*/
+
+
+/* 
+================================================
+Query Enquiry CSS
+================================================
+*/
+.query_section {
+    padding: 120px 0 0;
+    /* background-image: linear-gradient(to left, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/bg2.jpg); */
+    /* background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+}
+
+.enquiry_content form {
+    background: #f1f1f1;
+    padding: 30px;
+    border-radius: 4px;
+    display: grid;
+    gap: 30px;
+}
+
+.enquiry_content form input,
+.form-select {
+    padding: 10px 15px;
+}
+
+
+.news-section {
+    background: linear-gradient(360deg, rgb(9, 9, 121) 0%, rgba(0, 212, 255, 0.498) 87%);
+    padding: 20px;
+    box-shadow: rgb(0, 0, 0) 2px 2px;
+    position: relative;
+    color: rgb(0, 0, 0);
+    min-height: 770px;
+    margin-top: 60px;
+}
+
+marquee p {
+    color: #fff2f2;
+}
+
+.news-section img {
+    position: absolute;
+    right: 25px;
+    top: 10px;
+    width: auto;
+    height: 60px;
+}
+
+.custom_btn {
+    background: var(--themeColor) ;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 1;
+    margin: 0;
+    padding: 16px 27px;
+    font-weight: 600;
+    margin-top: 21px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.custom_btn:hover {
+    background: #ffae27;
+    color: #fff;
+}
+
+/* 
+================================================
+Query Enquiry CSS
+================================================
+*/
+
+
+/* 
+================================================
+Our Courses CSS
+================================================
+*/
+.our_course .card {
+    text-align: center;
+    position: relative;
+    transition: .3s ease;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -ms-transition: .3s ease;
+    -o-transition: .3s ease;
+    overflow: hidden;
+    height: 295px;
+}
+
+.our_course .card:hover {
+    box-shadow: 0 5px 10pox rgba(0, 0, 0, .5);
+}
+
+.card_overley {
+    position: absolute;
+    background: linear-gradient(360deg, rgba(9, 9, 121, 1) 0%, rgba(0, 212, 255, 0.4990371148459384) 87%);
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    left: 0;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s ease;
+}
+
+.our_course .card:hover .card_overley {
+    top: 0;
+}
+
+.our_course .card .card-img {
+    height: 100%;
+}
+
+.our_course .card .card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.course_info {
+    padding: 20px 15px;
+    box-sizing: border-box;
+}
+
+.our_course .card h4 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+.our_course .card h4 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+.our_course .card span {
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.our_course .card p {
+    color: #fbeeed;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.our_course .card .apply_btn {
+    max-width: 150px;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.course_info .apply_btn:hover {
+    background: var(--white) !important;
+    color: var(--primary) !important;
+}
+
+/* 
+================================================
+Our Courses CSS
+================================================
+*/
+
+/* 
+================================================
+Our Team CSS
+================================================
+*/
+
+
+.team_img {
+    width: 100%;
+    height: 250px;
+}
+
+.team_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.team_info {
+    text-align: center;
+    padding: 30px;
+}
+
+.team_info h4 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.team_info span {
+    color: #787878;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.team_info ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.team_info ul li {}
+
+.team_info ul li a {}
+
+
+/* 
+================================================
+Our Team CSS
+================================================
+*/
+
+
+/* 
+================================================
+Counter Section CSS
+================================================
+*/
+
+.counter_section {
+    background: linear-gradient(to left, rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url(../img/counter-bg.jpg) center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 120px 0;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+.counter_content i {
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: var(--primary);
+}
+.counter_info h3 {
+    font-size: 42px;
+    font-family: 'Poppins';
+    color: var(--white);
+    margin-bottom: 20px;
+}
+.counter_info h5 {
+    font-size: 19px;
+    font-weight: 400;
+}
+
+/* 
+================================================
+Counter Section CSS
+================================================
+*/
+
+
+
+
+/* 
+================================================
+Testimonial CSS
+================================================
+*/
+.testimonial {
+    background: #f7f7fb;
+}
+
+.testimonial_items.text-center {
+    max-width: 64%;
+    margin: auto;
+}
+
+.testimonila_img {
+    width: 150px;
+    height: 150px;
+    border: 2px solid var(--primary);
+    overflow: hidden;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.testimonila_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.testimonila_info h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.testimonila_info p {
+    position: relative;
+}
+
+.testimonila_info p::before {
+    content: '\f10d';
+    font-family: 'Fontawesome';
+    color: var(--primary);
+    font-size: 40px;
+}
+
+.testimonial .owl-dots {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.testimonial .owl-dots .owl-dot {
+    background: #ccc;
+    width: 20px;
+    height: 4px;
+    transition: .3s;
+}
+
+.testimonial .owl-dots .owl-dot.active {
+    background: var(--primary);
+    width: 30px;
+}
+
+/* 
+================================================
+Testimonial CSS
+================================================
+*/
+
+
+/* 
+================================================
+Breadcum CSS
+================================================
+*/
+.breadcumb-area {
+    background:linear-gradient(to left,rgba(0,0,0,.8),rgba(0,0,0,.8)),url("../img/contact-bg.jpg") ;
+    padding: 60px 0px 60px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+}
+
+.title h2 {
+    color: #fff;
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+.breadcumb-inner li i {
+    color: var(--themeColor);
+    font-size: 12px;
+}
+.breadcumb-inner li span {
+    color: var(--themeColor);
+}
+.breadcumb-inner li a {
+    font-weight: 400;
+    color: #fff;
+}
+.breadcumb-inner li a:hover {
+    color: var(--themeColor);
+}
+/* 
+================================================
+Breadcum CSS
+================================================
+*/
+
+
+
+/* 
+================================================
+About CSS
+================================================
+*/
+.about_content p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.bg-gray {
+    background: #f6f3fb;
+}
+
+/* 
+================================================
+About CSS
+================================================
+*/
+
+
+
+
+/* 
+================================================
+Services CSS
+================================================
+*/
+
+.our_category.our_service {
+    position: inherit;
+}
+.contact_area {
+    padding: 120px 0;
+}
+.contact_area .card {
+    position: relative;
+    background: var(--primary);
+    color: #fff;
+    padding: 30px;
+    min-height: 240px;
+}
+.contact_icon {
+    width: 40px;
+    height: 40px;
+    background: var(--themeColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+.contact_icon img {
+    width: 100%;
+    height: 100%;
+}
+.contact_icon {
+    width: 60px;
+    height: 60px;
+    background: var(--themeColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -23px;
+    padding: 10px;
+}
+.contact_icon::before {
+    content: '';
+    width: 25px;
+    height: 28px;
+    background: #c45403;
+    position: absolute;
+    top: 4px;
+    left: -8px;
+    transform: rotate(30deg);
+    z-index: -1;
+}
+.contact_info {
+    margin-top: 40px;
+}
+.contact_info h3 {
+    font-size: 29px;
+    margin-bottom: 20px;
+}
+.contact_info p {
+    font-size: 15px;
+    font-weight: 400;
+}
+.contact_info ul {
+    display: flex;
+    flex-flow: column;
+    gap: 12px;
+}
+.contact_info ul li a {
+    display: block;
+    color: #fff;
+}
+.input-group .form-control {
+    border: 1px solid #dbdbdb;
+    padding: 10px;
+    font-size: 15px;
+    outline: none;
+    box-shadow: none;
+}
+.input-group input:focus,.input-group textarea:focus {
+    border-color: var(--themeColor);
+}
+.send_btn {
+    padding: 16px 50px;
+    border-radius: 50px;
+    line-height: 1;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: auto;
+    display: table;
+    margin-top: 35px;
+}
+/* 
+================================================
+Services CSS
+================================================
+*/
+
+/* 
+================================================
+Gallery CSS
+================================================
+*/
+.our_gallery .card {
+    overflow: hidden;
+}
+.card_img {
+    height: 250px;
+}
+.card_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 1.2s ease-in-out;
+    
+}
+.card_img:hover img {
+    transform: scale(1.5);
+    transition: 1.3s ease-in-out;
+}
+button.loade_btn {
+    background: #ffcd3a;
+    border: none;
+    padding: 15px 30px;
+    display: table;
+    margin: auto;
+    max-width: 160px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 40px;
+}
+/* 
+================================================
+Gallery CSS
+================================================
+*/
+
+
+/* 
+================================================
+Footer CSS
+================================================
+*/
+.footer {
+    background: var(--secondary);
+    padding: 50px 0;
+}
+
+.footer_logo a {
+    display: block;
+}
+
+.footer_logo img {}
+
+.copyright p {
+    color: #fff;
+}
+
+.footer_link {
+    display: flex;
+    column-gap: 20px;
+    justify-content: flex-end;
+}
+
+.footer_link a {
+    color: #fff;
+    font-size: 15px;
+    text-transform: capitalize;
+    transition: all .3s ease;
+}
+.footer_link a:hover {
+    color: var(--themeColor);
+}
+/* 
+================================================
+Footer CSS
+================================================
+*/

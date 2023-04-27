@@ -1,0 +1,113 @@
+/* Normal desktop :1200px. */
+@media (min-width: 1200px) and (max-width: 1500px) {}
+
+
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {}
+
+
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+    a.navbar-brand img {
+        width: 70px;
+    }
+    .our_category {
+        padding: 120px 0 0;
+        background: #f2f8fe;
+    }
+    .our_category .card {
+        margin-bottom: 80px;
+    }
+    .query_section {
+        padding: 0;
+    }
+    .news-section {
+        margin: 0 0 80px;
+    }
+    .our_course .card h4 {
+        font-size: 23px;
+        line-height: 31px;
+        margin-bottom: 20px;
+    }
+    .our_course .card span {
+        font-size: 13px;
+        margin-bottom: 10px;
+        display: block;
+    }
+    .our_course .card p {
+        font-size: 16px;
+        line-height: 28px;
+        margin-top: 10px;
+    }
+    .our_course .card .apply_btn {
+        margin-top: 15px;
+    }
+    .our_course .col-sm-4 {
+        margin-bottom: 0px;
+    }
+    .copyright p {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .footer_link {
+        justify-content: center;
+    }
+
+}
+
+
+/* small mobile :320px. */
+@media (max-width: 767px) {}
+@media (max-width: 575px) {
+    .testimonial_items.text-center {
+        max-width: 100%;
+    }
+}
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+    .our_category {
+        padding: 120px 0 0;
+        background: #f2f8fe;
+    }
+    .our_category .card {
+        margin-bottom: 80px;
+    }
+    .query_section {
+        padding: 0;
+    }
+    .news-section {
+        margin: 0 0 80px;
+    }
+    .our_course .card h4 {
+        font-size: 23px;
+        line-height: 31px;
+        margin-bottom: 20px;
+    }
+    .our_course .card span {
+        font-size: 13px;
+        margin-bottom: 10px;
+        display: block;
+    }
+    .our_course .card p {
+        font-size: 16px;
+        line-height: 28px;
+        margin-top: 10px;
+    }
+    .our_course .card .apply_btn {
+        margin-top: 15px;
+    }
+    .our_course .col-sm-4 {
+        margin-bottom: 0px;
+    }
+    .testimonial_items.text-center {
+        max-width: 100%;
+    }
+    .copyright p {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .footer_link {
+        justify-content: center;
+    }
+}
