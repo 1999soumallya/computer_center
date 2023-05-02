@@ -1,8 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import TopHeader from './TopHeader'
 import { Container, Nav, NavbarBrand } from 'react-bootstrap'
 
 export default function Navbar() {
+    useEffect(() => {
+        if (document.getElementById(window.location.pathname.replace("/", ""))) {            
+            document.querySelectorAll(".nav-link").forEach((items) => {
+                items.classList.remove("active")
+            })
+            document.getElementById(window.location.pathname.replace("/", "")).classList.add("active")
+        } else {
+            document.getElementById("index").classList.add("active")
+        }
+    }, [])
+
     return (
         <div>
             <TopHeader />
@@ -38,22 +49,22 @@ export default function Navbar() {
                                     </Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link href="/facility">
+                                    <Nav.Link href="/facility" id='facility'>
                                         Facility
                                     </Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link href="/team">
+                                    <Nav.Link href="/team" id='team'>
                                         Team
                                     </Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link href="/gallery">
+                                    <Nav.Link href="/gallery" id='gallery'>
                                         Gallery
                                     </Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link href="/contact">
+                                    <Nav.Link href="/contact" id='contact'>
                                         Contact
                                     </Nav.Link>
                                 </Nav.Item>
